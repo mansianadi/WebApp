@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Cocktail Mixologist</title>
+        <link rel="stylesheet" href="style1.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>AI Cocktail Mixologist</h1>
+            <form id="cocktailForm">
+                <label for="ingredients">Enter Ingredients:</label>
+                <input
+                    type="text"
+                    id="ingredients"
+                    placeholder="e.g., vodka, lime, mint"
+                />
+
+                <label for="flavor">Preferred Flavor:</label>
+                <input
+                    type="text"
+                    id="flavor"
+                    placeholder="e.g., sweet, sour, spicy"
+                />
+
+                <label for="mood">Mood or Occasion:</label>
+                <input
+                    type="text"
+                    id="mood"
+                    placeholder="e.g., party, relaxing"
+                />
+
+                <button type="submit">Generate Cocktail Recipe</button>
+            </form>
+
+            <div id="result" class="hidden">
+                <h2>Your Cocktail Recipe</h2>
+                <pre id="cocktailRecipe"></pre>
+            </div>
+        </div>
+        <script src="script1.js"></script>
+    </body>
+</html>
